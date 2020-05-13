@@ -6,7 +6,7 @@ public class TS_Ex04 {
 
 //		Ex04. 다음 주어진 배열 데이터를 이용하여 3의 배수의 개수와 그 합을 아래와 같이 출력하는 프로그램을 작성하세요.
 //		
-//		double[] data = {1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31};
+//		int[] data = {1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31};
 
 		int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
 
@@ -17,8 +17,8 @@ public class TS_Ex04 {
 
 		for (int i = 0; i < data.length; i++) {
 			if (data[i] % 3 == 0) {
-				sum = sum + data[i];
 				count = count + 1;
+				sum = sum + data[i];
 			}
 		}
 		System.out.println("주어진 배열 내의 3의 배수의 갯수는 " + count + "입니다.");

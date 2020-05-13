@@ -14,10 +14,12 @@ public class TS_Ex06 {
 		for (int i = 0; i < c.length; i++) {
 			System.out.print(c[i]);
 		}
+
 		System.out.println("");
+
 		for (int j = 0; j < c.length; j++) {
 			if (c[j] == ' ') {
-				c[j]=',';					
+				c[j] = ',';
 			}
 		}
 		for (int i = 0; i < c.length; i++) {

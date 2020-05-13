@@ -8,13 +8,13 @@ public class TS_Ex08 {
 //					 (중복체크 할 것!)
 
 		System.out.println("Lotto 번호를 생성하는 프로그램입니다.");
-		System.out.println("마지막에 생성되는 번호는 보너스 번호입니다.\n");
+		System.out.println("7번째로 생성되는 번호는 보너스 번호입니다.\n");
 
 		int[] LottoNo = new int[7];
 
 		for (int i = 0; i < LottoNo.length; i++) {
-			LottoNo[i] = (int) (Math.random() * 7) + 1;
-			for (int k = i - 1; k >= 0; k--) {
+			LottoNo[i] = (int) (Math.random() * 45) + 1;
+			for (int k = i-1; k >= 0; k--) {
 				if (LottoNo[i] == LottoNo[k]) {
 					i--;
 					break;
@@ -24,7 +24,7 @@ public class TS_Ex08 {
 		}
 
 		for (int i = 0; i < LottoNo.length; i++) {
-			System.out.println(">> 생성된 로또 번호는 " + LottoNo[i] + " 입니다.");
+			System.out.println(">> " + (i+1) + "번째로 생성된 로또 번호는 " + LottoNo[i] + " 입니다.");
 
 		}
 
